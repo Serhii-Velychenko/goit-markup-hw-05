@@ -524,6 +524,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 24px;
 }
 
 .footer-input {
@@ -551,7 +552,6 @@ button {
 }
 
 .btn-footer-form {
-  margin-left: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
