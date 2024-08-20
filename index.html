@@ -61,7 +61,9 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="btn-hero" type="button">Order Service</button>
+          <button class="btn-hero" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- #endregion hero -->
@@ -470,9 +472,9 @@
       </div>
     </footer>
     <!-- #region modal -->
-    <div class="backdrop is-open">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn">
+        <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
@@ -508,12 +510,33 @@
           </div>
           <div class="form-wrapper-comment">
             <label class="form-label-comment" for="user-comment">Comment</label>
-              <textarea class="form-textarea" id="user-comment" placeholder="Text input"></textarea>
-            </div>
+            <textarea
+              class="form-textarea"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
           </div>
+          <div class="form-checkbox">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              id="user-checkbox"
+            />
+            <label class="custom-label-user-checkbox" for="user-checkbox">
+              <span class="custom-checkbox">
+                <svg class="" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="form-span-privacy-policy" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="form-btn-submit" type="submit">Send</button>
         </form>
       </div>
     </div>
     <!-- #endregion modal -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
